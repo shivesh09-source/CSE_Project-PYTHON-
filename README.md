@@ -1,80 +1,84 @@
-# CSE_Project-PYTHON-
-Mathematical Functions in Python
+# 🐍 Python Number Theory and Discrete Math Library
 
-🐍 Python Number Theory & Cryptography Functions
+## 🌟 Project Title
+[cite_start]Python Number Theory and Discrete Mathematics Library for Advanced Concepts[cite: 144].
 
-📝 Overview
+## 📄 Overview of the Project
+[cite_start]This project is a dedicated Python library containing **34 modular functions** implementing complex algorithms and concepts from **Number Theory, Cryptography, and Discrete Mathematics**. [cite_start]The functions are designed to be complete, organized, and testable[cite: 160, 114]. [cite_start]The structure follows the "Build Your Own Project" guidelines to ensure clear documentation and implementation quality[cite: 59, 107].
 
-This repository hosts a comprehensive collection of **34 Python functions** that implement various concepts from **Number Theory, Discrete Mathematics, and Cryptography**.
+## ✨ Features (Functional Requirements)
+[cite_start]The library is composed of distinct modules, each representing a specific mathematical concept or functional requirement[cite: 71, 147]. The core features are the 34 implemented functions:
 
-The project aims to demonstrate the application of course concepts through practical, modular, and well-tested code. Each function addresses a specific mathematical or algorithmic problem, ranging from basic number properties to advanced cryptographic primitives.
+### I. Basic Number Properties & Divisibility
+* `factorial`: Calculates $n!$ for a non-negative integer $n$.
+* `is_palindrome`: Checks if a number is a palindrome.
+* `mean_of_digits`: Returns the average of all digits in a number.
+* `digital_roots`: Repeatedly sums digits until a single digit is obtained.
+*`is_abundant`: Checks if the sum of proper divisors is greater than $n$.
+* `deficient`: Checks if the sum of proper divisors is less than $n$.
+* `is_harshad`: Checks if a number is divisible by the sum of its digits (Harshad number).
+* `isAutomorphic(N)`: Checks if a number's square ends with the number itself.
+* `pronic`: Checks if a number is the product of two consecutive integers.
+* `count_divisors`: Returns the number of positive divisors a number has.
+* `aliquot_sum`: Returns the sum of all proper divisors of $n$.
+* `amicable_numbers`: Checks if two numbers are amicable.
+*`multiplicative_persistence`: Counts steps until a number's digits multiply to a single digit.
+* `is_highly_composite`: Checks if a number has more divisors than any smaller number.
 
-✨ Features
+### II. Primality and Factorization
+* `list of prime factor`: Returns the list of prime factors of a number.
+* `count_distinct_prime_factors`: Returns the number of unique prime factors.
+* `prime_power`: Checks if a number can be expressed as $p^k$ (p prime, $k \ge 1$).
+* `mersenne_prime`: Checks if $2^p - 1$ is a prime number (given $p$ is prime).
+* `twin_primes`: Generates all twin prime pairs up to a limit.
+* `is_prime_miller_rabin`: Implements the probabilistic Miller-Rabin primality test with $k$ rounds[cite: 44, 48].
+* `pollard_rho`: Implements Pollard's $\rho$ algorithm for integer factorization[cite: 39, 48].
 
-This project includes 34 distinct functions categorized by topic:
+### III. Modular Arithmetic and Advanced Math
+* `mod_exp`: Efficiently calculates $(\text{base}^{\text{exponent}}) \pmod{\text{modulus}}$ (Modular Exponentiation).
+* `mod_inverse`: Calculates the modular multiplicative inverse of $a \pmod m$[cite: 9]. (Note: This function name `mod_inverse` aligns with the screenshot files).
+* `order_mod`: Function to calculate the multiplicative order of an integer modulo $n$ (implied feature).
+* `Chinese_Remainder_Theorem`: Solves a system of linear congruences (implied feature).
+* `is_carmichael`: Checks if a composite number $n$ satisfies $a^{n-1} \equiv 1 \pmod n$ for all $a$ coprime to $n$[cite: 31, 43].
+* `lucas_sequence`: Generates the first $n$ Lucas numbers[cite: 17].
+* `perfect_power`: Checks if a number can be expressed as $a^b$ where $a>0$ and $b>1$[cite: 19].
+* `collatz_length`: Returns the number of steps for $n$ to reach 1 in the Collatz conjecture[cite: 25].
+* [cite_start]`polygonal_number`: Returns the $n$-th $s$-gonal number[cite: 27].
+* [cite_start]`zeta_approx`: Approximates the Riemann zeta function $\zeta(s)$ using the first 'terms' of the series[cite: 49].
+* [cite_start]`partition_function`: Calculates the number of distinct ways to write $n$ as a sum of positive integers $p(n)$[cite: 55].
 
- Basic Number Properties (Questions 1-12)
-
-1.  `factorial(n)`: Calculates the factorial of a non-negative integer $n$ ($n!$).
-2.  `is_palindrome(n)`: Checks if a number reads the same forwards and backwards.
-3.  `mean_of_digits(n)`: Returns the average of all digits in a number.
-4.  `digital_root(n)`: Repeatedly sums the digits of a number until a single digit is obtained.
-5.  `is_abundant(n)`: Returns `True` if the sum of proper divisors of $n$ is greater than $n$.
-6.  `is_deficient(n)`: Returns `True` if the sum of proper divisors of $n$ is less than $n$.
-7.  `is_harshad(n)`: Checks if a number is divisible by the sum of its digits (Harshad/Niven number).
-8.  `is_automorphic(n)`: Checks if a number's square ends with the number itself.
-9.  `is_pronic(n)`: Checks if a number is the product of two consecutive integers (Pronic/Heteromecic number).
-10. `prime_factors(n)`: Returns the list of prime factors of a number.
-11. `count_distinct_prime_factors(n)`: Returns how many unique prime factors a number has.
-12. `is_semiprime(n)`: Checks if a number is the product of two (not necessarily distinct) prime numbers.
-
- Modular Arithmetic & Number Theory (Questions 13-21, 25-32)
-
-13. `phi(n)`: Returns the count of numbers $\le n$ that are coprime to $n$ (Euler's Totient Function).
-14. `modular_inverse(a, m)`: Calculates the modular multiplicative inverse of $a \pmod m$.
-15. `solve_crt(congruences)`: Solves a system of linear congruences (Chinese Remainder Theorem).
-16. `is_primitive_root(g, n)`: Checks if $g$ is a primitive root modulo $n$.
-17. `legendre_symbol(a, p)`: Computes the Legendre symbol $(a/p)$.
-18. `solve_dlog(g, h, p)`: Finds the discrete logarithm $x$ such that $g^x \equiv h \pmod p$.
-19. `pollard_p_minus_1(n, B)`: Integer factorization using Pollard's $p-1$ algorithm.
-20. `continued_fraction(x, max_terms)`: Returns the continued fraction representation of a real number $x$.
-21. `sum_digits_base_b(n, b)`: Computes the sum of the digits of $n$ in base $b$.
-25. `mod_exp(base, exponent, modulus)`: Efficiently calculates $(\text{base}^{\text{exponent}}) \pmod{\text{modulus}}$.
-26. `lucas_sequence(n)`: Generates the first $n$ Lucas numbers.
-27. `is_perfect_power(n)`: Checks if a number can be expressed as $a^b$ where $a>0$ and $b>1$.
-28. `collatz_length(n)`: Returns the number of steps for $n$ to reach 1 in the Collatz conjecture.
-29. `polygonal_numbers(n, s)`: Returns the $n$-th $s$-gonal number.
-30. `is_carmichael(n)`: Checks if a composite number $n$ satisfies $a^{n-1} \equiv 1 \pmod n$ for all $a$ coprime to $n$ (Carmichael Number Check).
-31. `is_prime_miller_rabin(n, k)`: Probabilistic Miller-Rabin primality test with $k$ rounds.
-32. `pollard_rho(n)`: Integer factorization using Pollard's rho algorithm.
-
- Cryptography & Advanced Functions (Questions 22-24, 33-34)
-
-22. `rsa_encrypt/decrypt`: Functions for RSA Encryption and Decryption.
-23. `elgamal_encrypt/decrypt`: Functions for ElGamal Encryption and Decryption.
-24. `rabin_encrypt/decrypt`: Functions for the Rabin Cryptosystem.
-33. `zeta_approx(s, terms)`: Approximates the Riemann Zeta function $\zeta(s)$.
-34. `simple_hash(data)`: A simple hash function that returns a small integer hash value.
-
-🛠️ Technologies/Tools Used
-
+## 🛠️ Technologies/Tools Used
 * **Language:** Python 3.x
-* **Version Control:** Git
-* **Hosting:** GitHub (assumed)
+* **Version Control:** Git [cite: 110]
+* **Module Structure:** Modular and clean implementation using multiple files/modules[cite: 107, 112].
 
+## 🚀 Steps to Install & Run the Project
+1.  **Clone the Repository:**
+    ```bash
+    git clone [Your-GitHub-Repository-URL]
+    cd [Your-Project-Name]
+    ```
+2.  **Verify Python Environment:**
+    Ensure you have **Python 3.x** installed.
+    ```bash
+    python3 --version
+    ```
+3.  **Run Demonstrations:**
+    Execute the main script or specific module files to test the functions:
+    ```bash
+    # Example: Run a script demonstrating factorial
+    python3 factorial.py 
+    ```
 
-✅ Instructions for Testing
+## ✅ Instructions for Testing
+The project adheres to the requirement for testing wherever applicable[cite: 114]. [cite_start]Unit tests are crucial for verifying the mathematical correctness of these algorithms[cite: 150].
 
-Unit tests ensure the correctness of all 34 functions.
-
-1.  **Install a Test Runner:**
-    It is recommended to use `pytest` for running tests:
+1.  **Install Pytest (Recommended Test Runner):**
     ```bash
     pip install pytest
     ```
-
 2.  **Run the Tests:**
-    Assuming a `test_functions.py` file contains the test cases, run them from the project root directory:
+    Assuming a dedicated `tests/` directory contains all unit tests, run them from the project root:
     ```bash
     pytest
     ```
