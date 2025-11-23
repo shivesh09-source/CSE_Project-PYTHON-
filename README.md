@@ -1,18 +1,19 @@
 # CSE_Project-PYTHON-
 Mathematical Functions in Python
-# 🐍 Python Number Theory & Cryptography Functions
 
-## 📝 Overview
+🐍 Python Number Theory & Cryptography Functions
+
+📝 Overview
 
 This repository hosts a comprehensive collection of **34 Python functions** that implement various concepts from **Number Theory, Discrete Mathematics, and Cryptography**.
 
 The project aims to demonstrate the application of course concepts through practical, modular, and well-tested code. Each function addresses a specific mathematical or algorithmic problem, ranging from basic number properties to advanced cryptographic primitives.
 
-## ✨ Features
+✨ Features
 
 This project includes 34 distinct functions categorized by topic:
 
-### Basic Number Properties (Questions 1-12)
+ Basic Number Properties (Questions 1-12)
 
 1.  `factorial(n)`: Calculates the factorial of a non-negative integer $n$ ($n!$).
 2.  `is_palindrome(n)`: Checks if a number reads the same forwards and backwards.
@@ -27,7 +28,7 @@ This project includes 34 distinct functions categorized by topic:
 11. `count_distinct_prime_factors(n)`: Returns how many unique prime factors a number has.
 12. `is_semiprime(n)`: Checks if a number is the product of two (not necessarily distinct) prime numbers.
 
-### Modular Arithmetic & Number Theory (Questions 13-21, 25-32)
+ Modular Arithmetic & Number Theory (Questions 13-21, 25-32)
 
 13. `phi(n)`: Returns the count of numbers $\le n$ that are coprime to $n$ (Euler's Totient Function).
 14. `modular_inverse(a, m)`: Calculates the modular multiplicative inverse of $a \pmod m$.
@@ -47,7 +48,7 @@ This project includes 34 distinct functions categorized by topic:
 31. `is_prime_miller_rabin(n, k)`: Probabilistic Miller-Rabin primality test with $k$ rounds.
 32. `pollard_rho(n)`: Integer factorization using Pollard's rho algorithm.
 
-### Cryptography & Advanced Functions (Questions 22-24, 33-34)
+ Cryptography & Advanced Functions (Questions 22-24, 33-34)
 
 22. `rsa_encrypt/decrypt`: Functions for RSA Encryption and Decryption.
 23. `elgamal_encrypt/decrypt`: Functions for ElGamal Encryption and Decryption.
@@ -55,36 +56,14 @@ This project includes 34 distinct functions categorized by topic:
 33. `zeta_approx(s, terms)`: Approximates the Riemann Zeta function $\zeta(s)$.
 34. `simple_hash(data)`: A simple hash function that returns a small integer hash value.
 
-## 🛠️ Technologies/Tools Used
+🛠️ Technologies/Tools Used
 
 * **Language:** Python 3.x
 * **Version Control:** Git
 * **Hosting:** GitHub (assumed)
 
-## 💻 Steps to Install & Run the Project
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [Your-GitHub-Repository-URL]
-    cd [Your-Project-Name]
-    ```
-
-2.  **Ensure Python is Installed:**
-    This project requires **Python 3.x**. You can check your version:
-    ```bash
-    python --version
-    # or
-    python3 --version
-    ```
-
-3.  **Run the Main Script (Example):**
-    Assuming all functions are saved in a file named `math_functions.py`:
-    ```bash
-    python math_functions.py
-    ```
-    *Note: A primary script (e.g., `main.py`) should import and demonstrate the usage of the core functions.*
-
-## ✅ Instructions for Testing
+✅ Instructions for Testing
 
 Unit tests ensure the correctness of all 34 functions.
 
