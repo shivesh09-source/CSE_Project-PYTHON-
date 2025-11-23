@@ -1,13 +1,13 @@
 # 🐍 Python Number Theory and Discrete Math Library
 
 ## 🌟 Project Title
-[cite_start]Python Number Theory and Discrete Mathematics Library for Advanced Concepts[cite: 144].
+Python Number Theory and Discrete Mathematics Library for Advanced Concepts.
 
 ## 📄 Overview of the Project
-[cite_start]This project is a dedicated Python library containing **34 modular functions** implementing complex algorithms and concepts from **Number Theory, Cryptography, and Discrete Mathematics**. [cite_start]The functions are designed to be complete, organized, and testable[cite: 160, 114]. [cite_start]The structure follows the "Build Your Own Project" guidelines to ensure clear documentation and implementation quality[cite: 59, 107].
+This project is a dedicated Python library containing **34 modular functions** implementing complex algorithms and concepts from **Number Theory, Cryptography, and Discrete Mathematics**.The functions are designed to be complete, organized, and testable. The structure follows the "Build Your Own Project" guidelines to ensure clear documentation and implementation quality.
 
 ## ✨ Features (Functional Requirements)
-[cite_start]The library is composed of distinct modules, each representing a specific mathematical concept or functional requirement[cite: 71, 147]. The core features are the 34 implemented functions:
+The library is composed of distinct modules, each representing a specific mathematical concept or functional requirement. The core features are the 34 implemented functions:
 
 ### I. Basic Number Properties & Divisibility
 * `factorial`: Calculates $n!$ for a non-negative integer $n$.
@@ -31,26 +31,26 @@
 * `prime_power`: Checks if a number can be expressed as $p^k$ (p prime, $k \ge 1$).
 * `mersenne_prime`: Checks if $2^p - 1$ is a prime number (given $p$ is prime).
 * `twin_primes`: Generates all twin prime pairs up to a limit.
-* `is_prime_miller_rabin`: Implements the probabilistic Miller-Rabin primality test with $k$ rounds[cite: 44, 48].
-* `pollard_rho`: Implements Pollard's $\rho$ algorithm for integer factorization[cite: 39, 48].
+* `is_prime_miller_rabin`: Implements the probabilistic Miller-Rabin primality test with $k$ rounds,
+* `pollard_rho`: Implements Pollard's $\rho$ algorithm for integer factorization.
 
 ### III. Modular Arithmetic and Advanced Math
 * `mod_exp`: Efficiently calculates $(\text{base}^{\text{exponent}}) \pmod{\text{modulus}}$ (Modular Exponentiation).
-* `mod_inverse`: Calculates the modular multiplicative inverse of $a \pmod m$[cite: 9]. (Note: This function name `mod_inverse` aligns with the screenshot files).
+* `mod_inverse`: Calculates the modular multiplicative inverse of $a \pmod m$. (Note: This function name `mod_inverse` aligns with the screenshot files).
 * `order_mod`: Function to calculate the multiplicative order of an integer modulo $n$ (implied feature).
 * `Chinese_Remainder_Theorem`: Solves a system of linear congruences (implied feature).
-* `is_carmichael`: Checks if a composite number $n$ satisfies $a^{n-1} \equiv 1 \pmod n$ for all $a$ coprime to $n$[cite: 31, 43].
-* `lucas_sequence`: Generates the first $n$ Lucas numbers[cite: 17].
-* `perfect_power`: Checks if a number can be expressed as $a^b$ where $a>0$ and $b>1$[cite: 19].
-* `collatz_length`: Returns the number of steps for $n$ to reach 1 in the Collatz conjecture[cite: 25].
-* [cite_start]`polygonal_number`: Returns the $n$-th $s$-gonal number[cite: 27].
-* [cite_start]`zeta_approx`: Approximates the Riemann zeta function $\zeta(s)$ using the first 'terms' of the series[cite: 49].
-* [cite_start]`partition_function`: Calculates the number of distinct ways to write $n$ as a sum of positive integers $p(n)$[cite: 55].
+* `is_carmichael`: Checks if a composite number $n$ satisfies $a^{n-1} \equiv 1 \pmod n$ for all $a$ coprime to $n$.
+* `lucas_sequence`: Generates the first $n$ Lucas numbers.
+* `perfect_power`: Checks if a number can be expressed as $a^b$ where $a>0$ and $b>1$.
+* `collatz_length`: Returns the number of steps for $n$ to reach 1 in the Collatz conjecture.
+* `polygonal_number`: Returns the $n$-th $s$-gonal number.
+* `zeta_approx`: Approximates the Riemann zeta function $\zeta(s)$ using the first 'terms' of the series.
+* `partition_function`: Calculates the number of distinct ways to write $n$ as a sum of positive integers $p(n)$.
 
 ## 🛠️ Technologies/Tools Used
 * **Language:** Python 3.x
-* **Version Control:** Git [cite: 110]
-* **Module Structure:** Modular and clean implementation using multiple files/modules[cite: 107, 112].
+* **Version Control:** Git 
+* **Module Structure:** Modular and clean implementation using multiple files/modules.
 
 ## 🚀 Steps to Install & Run the Project
 1.  **Clone the Repository:**
@@ -71,7 +71,7 @@
     ```
 
 ## ✅ Instructions for Testing
-The project adheres to the requirement for testing wherever applicable[cite: 114]. [cite_start]Unit tests are crucial for verifying the mathematical correctness of these algorithms[cite: 150].
+The project adheres to the requirement for testing wherever applicable. Unit tests are crucial for verifying the mathematical correctness of these algorithms.
 
 1.  **Install Pytest (Recommended Test Runner):**
     ```bash
